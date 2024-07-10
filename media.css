@@ -1,0 +1,29 @@
+.media-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: px;
+    background-color: aqua;
+}
+
+.media-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.media-item audio {
+    width: 100%;
+}
+
+.legend{
+    border: 1px solid ;
+    border-radius: 5px;
+}

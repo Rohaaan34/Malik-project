@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Image Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./car.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+   
+    <div class="swiper-container">
+        
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide" style="background-image:url('./index/img/car2.jpg')">
+                <div class="centered-text">Vinland Saga</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url('./index/img/car3.jpg')">
+                <div class="side-text-right">Berserk</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url('./index/img/car4.jpg')">
+                <div class="side-text-left">Miyamoto Musashi</div>
+            </div>
+        </div>
+       
+        <div class="swiper-pagination"></div>
+
+       
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <audio id="audio-1" src="./index/audio/audio_2024_07_09_17_34_57_vocal.mp3" preload="auto"></audio>
+    <audio id="audio-2" src="./index/audio/@vladosta_edits=669c49_vocals_mixed.mp3" preload="auto"></audio>
+    <audio id="audio-3" src="./index/audio/audio_2024_07_09_17_36_11_vocal.mp3" preload="auto"></audio>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            speed: 1000,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                slideChangeTransitionStart: function() {
+                    const audios = document.querySelectorAll('audio');
+                    audios.forEach(audio => audio.pause());
+                    const currentAudio = document.getElementById(`audio-${swiper.realIndex + 1}`);
+                    currentAudio.currentTime = 0;
+                    currentAudio.play();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

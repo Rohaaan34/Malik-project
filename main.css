@@ -1,0 +1,31 @@
+body{
+    background-color: aqua;
+}
+header{
+    margin-top: 20%;
+
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+
+div a{
+    color: black;
+    text-decoration: none;
+}
+
+ span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: blueviolet;
+    border-radius: 7px;
+    width: 150px;
+    height: 50px;
+}
+
+span:hover{
+    background-color: pink;
+}

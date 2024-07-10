@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    transition:  0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: black;
+}
+
+nav{
+    min-width: 100%;
+}
+
+.nav-wrapper a{
+    color: antiquewhite;
+}
+
+.title-p:hover{
+    background-color: #212121;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+
+.three{
+   
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #ccc;
+    background-color: white;
+}
+
+.title-h{
+    transition: color 0.5s ease-in-out;
+}
+
+.title-h:hover{
+    color: purple;
+   
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+
+.card{
+    transition: 0.5s;
+    background-color: aqua;
+    border: 3px solid #0ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+    
+}
+
+.row{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:hover{
+    transform: scale(0.9);
+    box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff, 0 0 80px #0ff;
+    
+}
+.card-image img{
+
+    width: 400px;
+    height: 450px;
+}
+
+
+.red-theme {
+    background-color: #ff0000; 
+    color: black; 
+}
+
+.red-background {
+    background-color: #ff0000 !important;
+}
+
+.theme-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    z-index: 1000; 
+}
+
+.theme-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.theme-btn:hover {
+    background-color: #0056b3;
+}
+
+.red-theme-img {
+    filter: brightness(0.5);
+}
+
+.videos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.responsive-video{
+    width: 400px;
+    height: 700px;
+    border-radius: 10%;
+    border: 1px solid black;
+    box-shadow:0 4px 16px #ccc;
+    
+}
+
+
+.mus{
+    color: white;
+    text-align: left;
+}
+
+.vid-cont{
+    margin-top: 70px;
+}
+
+.click a{
+    color: wheat;
+    text-decoration: none;
+}
+
+.click:hover{
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+.click{
+    height: 40px;
+    width: 150px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    transition:  0.3s ease, transform 0.3s ease; 
+}
+
+.btn-click{
+    height: 50px;
+    margin-top: 60px;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-footer a {
+    color: #bdbdbd; 
+    transition: color 0.3s ease;
+}
+.page-footer a:hover {
+    color: #ffffff; 
+    text-decoration: underline; 
+    
+}
+
+
